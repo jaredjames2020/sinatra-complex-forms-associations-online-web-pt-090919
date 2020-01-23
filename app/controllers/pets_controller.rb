@@ -16,6 +16,8 @@ class PetsController < ApplicationController
       new_owner = Owner.create(name: params[:owner][:name])
       @pet.owner = new_owner
       binding.pry
+    else
+      
     end
     @pet.save
 
